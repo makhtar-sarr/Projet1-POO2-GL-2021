@@ -56,14 +56,14 @@ def carre(cote, couleur = "black", ramplis = "white"):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def triangle(coteA, coteB, angleC):
-    coteC = sqrt((coteA**2) + (coteB**2) - (2*coteA*coteB*cos(angleC)))
-    figure.forward(coteA)
-    figure.left(180 - angleC)
+def triangle(coteA, coteB, angleA):
+    coteC = sqrt((coteA**2) + (coteB**2) - (2*coteA*coteB*cos(angleA)))
     figure.forward(coteB)
-    angleB = degrees(acos(((coteA**2) + (coteB**2) - (coteC**2))/(2*coteA*coteB)))
-    print(angleB)
+    figure.left(180 - angleA)
+    figure.forward(coteA)
+    angleB = degrees(acos(((coteA**2) + (coteC**2) - (coteB**2))/(2*coteA*coteC)))
     figure.left(180 - angleB)
     figure.forward(coteC)
+    #Pour l'instent ca ne fonctionnement pas mais ca avance.
 
-triangle(50, 50, 30)
+triangle(50, 50, 90)
