@@ -65,4 +65,44 @@ def triangle(coteA, coteB, coteC):
     figure.left(180 - angleC)
     figure.forward(coteC)
 
-triangle(100, 100, 90)
+# Objectifs:
+# Methode:
+# Besoins:
+# Connus:
+# Entrees:
+# Sorties:
+# Resultats:
+# Hypotheses:
+def rectangle(longueur, largeur):
+    if longueur != largeur:
+        for i in range(2):
+            figure.forward(longueur)
+            figure.left(90)
+            figure.forward(largeur)
+            figure.left(90)
+    else:
+        print("erreur")
+
+# Objectifs:
+# Methode:
+# Besoins:
+# Connus:
+# Entrees:
+# Sorties:
+# Resultats:
+# Hypotheses:
+def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
+    if nbrCote == 3 and cote3 != 0:
+        triangle(cote1, cote2, cote3)
+    elif nbrCote == 4 and cote2 == 0:
+        carre(cote1)
+    elif nbrCote == 4 and cote3 == 0:
+        rectangle(cote1, cote2)
+    elif nbrCote > 4 and cote2 == 0:
+        for i in range(nbrCote):
+            figure.forward(cote1)
+            figure.left(360/nbrCote)
+    else:
+        print("erreur")
+
+polygone(7, 70)
