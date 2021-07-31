@@ -105,6 +105,8 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
     else:
         print("erreur")
 
+polygone(7, 70)
+
 # Objectifs:
 # Methode:
 # Besoins:
@@ -113,14 +115,11 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def trapeze(base1, base2, hauteur, coteD):
-    angle = degrees(asin(hauteur/coteD))
-    position = figure.position()
-    figure.forward(base1)
-    figure.left(180 - angle)
-    figure.forward(coteD)
-    figure.left(angle)
-    figure.forward(base2)
-    figure.goto(position)
+def losange(cote):
+    figure.right(-45)
+    for i in range(4):
+        figure.forward(150)
+        figure.right(60*(1+i%2))
+losange(4)
 
-trapeze(100, 30, 40, 40)
+
