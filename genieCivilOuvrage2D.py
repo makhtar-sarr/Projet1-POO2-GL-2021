@@ -105,4 +105,22 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
     else:
         print("erreur")
 
-polygone(7, 70)
+# Objectifs:
+# Methode:
+# Besoins:
+# Connus:
+# Entrees:
+# Sorties:
+# Resultats:
+# Hypotheses:
+def trapeze(base1, base2, hauteur, coteD):
+    angle = degrees(asin(hauteur/coteD))
+    position = figure.position()
+    figure.forward(base1)
+    figure.left(180 - angle)
+    figure.forward(coteD)
+    figure.left(angle)
+    figure.forward(base2)
+    figure.goto(position)
+
+trapeze(100, 30, 40, 40)
