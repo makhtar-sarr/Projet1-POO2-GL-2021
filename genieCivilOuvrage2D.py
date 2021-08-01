@@ -1,7 +1,7 @@
 """Cet module contient des fonction pour dessiner
 des figure geometrique avec la bibiotheque Turtle.
 
-Auteurs: Fatou DIOUF, <votre mail ici>
+Auteurs: Fatou DIOUF, fatou.diouf2@univ-thies.sn
          Makhtar SARR, makhtar.sarr@univ-thies.sn.
 """
 
@@ -32,6 +32,7 @@ def cercle(rayon, couleur = "black"):
 # Hypotheses:
 def demiCercle(rayon, couleur = "black"):
     figure.color(couleur)
+    figure.left(90)
     figure.circle(rayon, 180)
 
 # Objectifs:
@@ -56,7 +57,8 @@ def carre(cote, couleur = "black", ramplis = "white"):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def triangle(coteA, coteB, coteC):
+def triangle(coteA, coteB, coteC, couleur = "black"):
+    figure.color(couleur)
     angleB = degrees(acos(((coteA**2) + (coteB**2) - (coteC**2))/(2*coteA*coteB)))
     figure.forward(coteA)
     figure.left(180 - angleB)
@@ -73,7 +75,8 @@ def triangle(coteA, coteB, coteC):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def rectangle(longueur, largeur):
+def rectangle(longueur, largeur, couleur = "black", couleur2='black'):
+    figure.color(couleur, couleur2)
     if longueur != largeur:
         for i in range(2):
             figure.forward(longueur)
@@ -105,6 +108,8 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
     else:
         print("erreur")
 
+polygone(7, 70)
+
 # Objectifs:
 # Methode:
 # Besoins:
@@ -113,7 +118,8 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def trapeze(base1, base2, hauteur, coteD):
+def trapeze(base1, base2, hauteur, coteD, couleur = "black"):
+    figure.color(couleur)
     angle = degrees(asin(hauteur/coteD))
     position = figure.position()
     figure.forward(base1)
@@ -123,4 +129,33 @@ def trapeze(base1, base2, hauteur, coteD):
     figure.forward(base2)
     figure.goto(position)
 
-trapeze(100, 30, 40, 40)
+# Objectifs:
+# Methode:
+# Besoins:
+# Connus:
+# Entrees:
+# Sorties:
+# Resultats:
+# Hypotheses:
+def losange(cote, couleur = "black"):
+    figure.color(couleur)
+    figure.left(30)
+    for i in range(2):
+        figure.left(100)
+        figure.forward(cote)
+        figure.left(80)
+        figure.forward(cote)
+
+# Objectifs:
+# Methode:
+# Besoins:
+# Connus:
+# Entrees:
+# Sorties:
+# Resultats:
+# Hypotheses:
+def elypse(rayon, couleur = "black"):
+    figure.color(couleur)
+    for i in range(2) :
+        figure.circle(rayon, 90)
+        figure.circle(rayon//2, 90)
