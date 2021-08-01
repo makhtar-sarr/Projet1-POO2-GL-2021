@@ -118,6 +118,7 @@ polygone(7, 70)
 # Sorties:
 # Resultats:
 # Hypotheses:
+
 def trapeze(base1, base2, hauteur, coteD, couleur = "black"):
     figure.color(couleur)
     angle = degrees(asin(hauteur/coteD))
@@ -159,3 +160,11 @@ def elypse(rayon, couleur = "black"):
     for i in range(2) :
         figure.circle(rayon, 90)
         figure.circle(rayon//2, 90)
+
+def losange(cote):
+    figure.right(-45)
+    for i in range(4):
+        figure.forward(150)
+        figure.right(60*(1+i%2))
+losange(4)
+
