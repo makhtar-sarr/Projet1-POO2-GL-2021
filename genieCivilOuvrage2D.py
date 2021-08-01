@@ -108,8 +108,6 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
     else:
         print("erreur")
 
-polygone(7, 70)
-
 # Objectifs:
 # Methode:
 # Besoins:
@@ -138,14 +136,14 @@ def trapeze(base1, base2, hauteur, coteD, couleur = "black"):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def losange(cote, couleur = "black"):
-    figure.color(couleur)
-    figure.left(30)
-    for i in range(2):
-        figure.left(100)
+
+def losange(cote, couleur = "black", couleur2 = "black"):
+    figure.color(couleur, couleur2)
+    figure.right(-30)
+    for i in range(4):
         figure.forward(cote)
-        figure.left(80)
-        figure.forward(cote)
+        figure.right(60*(1+i%2))
+losange(50)
 
 # Objectifs:
 # Methode:
@@ -160,11 +158,3 @@ def elypse(rayon, couleur = "black"):
     for i in range(2) :
         figure.circle(rayon, 90)
         figure.circle(rayon//2, 90)
-
-def losange(cote):
-    figure.right(-45)
-    for i in range(4):
-        figure.forward(150)
-        figure.right(60*(1+i%2))
-losange(4)
-
