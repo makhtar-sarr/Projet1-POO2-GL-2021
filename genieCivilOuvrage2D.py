@@ -32,7 +32,6 @@ def cercle(rayon, couleur = "black"):
 # Hypotheses:
 def demiCercle(rayon, couleur = "black"):
     figure.color(couleur)
-    figure.left(90)
     figure.circle(rayon, 180)
 
 # Objectifs:
@@ -57,8 +56,7 @@ def carre(cote, couleur = "black", ramplis = "white"):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def triangle(coteA, coteB, coteC, couleur = "black"):
-    figure.color(couleur)
+def triangle(coteA, coteB, coteC):
     angleB = degrees(acos(((coteA**2) + (coteB**2) - (coteC**2))/(2*coteA*coteB)))
     figure.forward(coteA)
     figure.left(180 - angleB)
@@ -75,8 +73,7 @@ def triangle(coteA, coteB, coteC, couleur = "black"):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def rectangle(longueur, largeur, couleur = "black", couleur2='black'):
-    figure.color(couleur, couleur2)
+def rectangle(longueur, largeur):
     if longueur != largeur:
         for i in range(2):
             figure.forward(longueur)
@@ -118,53 +115,27 @@ polygone(7, 70)
 # Sorties:
 # Resultats:
 # Hypotheses:
-
-def trapeze(base1, base2, hauteur, coteD, couleur = "black"):
-    figure.color(couleur)
-    angle = degrees(asin(hauteur/coteD))
-    position = figure.position()
-    figure.forward(base1)
-    figure.left(180 - angle)
-    figure.forward(coteD)
-    figure.left(angle)
-    figure.forward(base2)
-    figure.goto(position)
-
-# Objectifs:
-# Methode:
-# Besoins:
-# Connus:
-# Entrees:
-# Sorties:
-# Resultats:
-# Hypotheses:
-def losange(cote, couleur = "black"):
-    figure.color(couleur)
-    figure.left(30)
-    for i in range(2):
-        figure.left(100)
-        figure.forward(cote)
-        figure.left(80)
-        figure.forward(cote)
-
-# Objectifs:
-# Methode:
-# Besoins:
-# Connus:
-# Entrees:
-# Sorties:
-# Resultats:
-# Hypotheses:
-def elypse(rayon, couleur = "black"):
-    figure.color(couleur)
-    for i in range(2) :
-        figure.circle(rayon, 90)
-        figure.circle(rayon//2, 90)
-
 def losange(cote):
     figure.right(-45)
     for i in range(4):
         figure.forward(150)
         figure.right(60*(1+i%2))
 losange(4)
+
+# Objectifs:
+# Methode:
+# Besoins:
+# Connus:
+# Entrees:
+# Sorties:
+# Resultats:
+# Hypotheses:
+def ellipse(rayon):
+    for i in range(2):
+      figure.circle(rayon, 90)
+      figure.circle(rayon//2, 90)    
+    figure.seth(-60)
+    width(10)
+ellipse(100)
+
 
