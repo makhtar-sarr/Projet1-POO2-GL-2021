@@ -153,8 +153,10 @@ losange(50)
 # Sorties:
 # Resultats:
 # Hypotheses:
-def elypse(rayon, couleur = "black"):
-    figure.color(couleur)
-    for i in range(2) :
+def elypse(rayon, couleur = "green"):
+    for i in range(2):
         figure.circle(rayon, 90)
-        figure.circle(rayon//2, 90)
+        figure.circle(rayon//2, 90)  
+figure.seth(-45)
+fillcolor("green")
+elypse(100)
