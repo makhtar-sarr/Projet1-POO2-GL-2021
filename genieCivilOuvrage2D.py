@@ -32,9 +32,7 @@ def cercle(rayon, couleur = "black"):
 # Hypotheses:
 def demiCercle(rayon, couleur = "black"):
     figure.color(couleur)
-    figure.left(90)
     figure.circle(rayon, 180)
-
 # Objectifs:
 # Methode:
 # Besoins:
@@ -143,7 +141,6 @@ def losange(cote, couleur = "black", couleur2 = "black"):
     for i in range(4):
         figure.forward(cote)
         figure.right(60*(1+i%2))
-losange(50)
 
 # Objectifs:
 # Methode:
@@ -155,6 +152,13 @@ losange(50)
 # Hypotheses:
 def elypse(rayon, couleur = "black"):
     figure.color(couleur)
+    figure.left(135)
     for i in range(2) :
         figure.circle(rayon, 90)
-        figure.circle(rayon//2, 90)
+        figure.circle(rayon//4, 90)
+def demiElypse(rayon, couleur = "black"):
+    figure.left(45)
+    figure.circle(rayon//35, 90)
+    figure.circle(rayon, 90)
+    figure.circle(rayon//35, 90)
+
