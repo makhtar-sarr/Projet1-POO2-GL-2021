@@ -55,8 +55,8 @@ def carre(cote, couleur = "black", ramplis = "white"):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def triangle(coteA, coteB, coteC, couleur = "black"):
-    figure.color(couleur)
+def triangle(coteA, coteB, coteC, couleur = "black", couleur1 = "white"):
+    figure.color(couleur, couleur1)
     angleB = degrees(acos(((coteA**2) + (coteB**2) - (coteC**2))/(2*coteA*coteB)))
     figure.forward(coteA)
     figure.left(180 - angleB)
@@ -64,6 +64,8 @@ def triangle(coteA, coteB, coteC, couleur = "black"):
     figure.forward(coteB)
     figure.left(180 - angleC)
     figure.forward(coteC)
+    angleA = degrees(acos(((coteB**2) + (coteA**2) - (coteC**2))/(2*coteB*coteA)))
+    figure.left(180 - angleA)
 
 # Objectifs:
 # Methode:
@@ -115,16 +117,15 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
 # Resultats:
 # Hypotheses:
 
-def trapeze(base1, base2, hauteur, coteD, couleur = "black"):
-    figure.color(couleur)
-    angle = degrees(asin(hauteur/coteD))
-    position = figure.position()
+def trapeze(base1, base2, coteD, coteG, couleur = "black", couleur2 = "black"):
+    figure.color(couleur, couleur2)
     figure.forward(base1)
-    figure.left(180 - angle)
+    figure.left(30)
     figure.forward(coteD)
-    figure.left(angle)
+    figure.left(150)
     figure.forward(base2)
-    figure.goto(position)
+    figure.left(150)
+    figure.forward(coteG)
 
 # Objectifs:
 # Methode:
@@ -162,3 +163,4 @@ def demiElypse(rayon, couleur = "black"):
     figure.circle(rayon, 90)
     figure.circle(rayon//35, 90)
 
+# trapeze(30, 50, 20, 20)
