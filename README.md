@@ -13,7 +13,7 @@ def cercle(rayon, couleur = "black"):
 ```python
 cercle(100)
 ```
-![](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/images/cercle.png "cercle de rayon 100 px")
+![cercle](https://user-images.githubusercontent.com/78378063/128608950-c93aa567-d8b5-43b0-a6d5-7b0e6c30e102.png)
 ## Fonction demi-cercle
 ### Description
 Cette methode va nous permettre de dessiner un **demi-cercle** avec toujours la methode `circle` de `turtle`, mais dans ce cas nous allons renseigner l'angle d'arret. Elle prend un parametre obligatoire, le `rayon` et un optionnel, la `couleur`.
