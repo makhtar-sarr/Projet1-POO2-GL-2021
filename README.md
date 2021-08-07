@@ -66,7 +66,7 @@ def triangle(coteA, coteB, coteC, couleur = "black", couleur1 = "white"):
 ```python
 triangle(100, 90, 70)
 ```
-![](/images/triangle.png "triangle de cote 100, 90, 75px")
+[]: https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/images/carre.png "triangle de cote 100, 90, 75px"
 ## Fonction rectangle
 ### Description
 Cette methode va nous permettre de dessiner un **rectangle** avec `turtle` en utilisant une boucle `for`. Elle prend deux parametres obligatoires, `longueur`, `largeur` en pixel et deux optionnels, la `couleur` du contour et le remplissage ici `couleur2`.
