@@ -13,7 +13,7 @@ def cercle(rayon, couleur = "black"):
 ```python
 cercle(100)
 ```
-[cercle(100)]: /images/cercle.png "cercle de rayon 100 px"
+![](/images/cercle.png "cercle de rayon 100 px")
 ## Fonction demi-cercle
 ### Description
 Cette methode va nous permettre de dessiner un **demi-cercle** avec toujours la methode `circle` de `turtle`, mais dans ce cas nous allons renseigner l'angle d'arret. Elle prend un parametre obligatoire, le `rayon` et un optionnel, la `couleur`.
@@ -28,7 +28,7 @@ def demiCercle(rayon, couleur = "black"):
 ```python
 demiCercle(100)
 ```
-[demiCercle(100)]: /images/demiCercle.png "demi-cercle de rayon 100 px"
+![](/images/demiCercle.png "demi-cercle de rayon 100 px")
 ## Fonction carre
 ### Description
 Cette methode va nous permettre de dessiner un carre avec `turtle` en utilisant une boucle `for`. Elle prend un parametre obligatoire, `cote` du carre en pixel et deux optionnels, la `couleur` et le remplissage ici `remplis`.
@@ -44,7 +44,7 @@ def carre(cote, couleur = "black", remplis = "white"):
 ```python
 carre(100)
 ```
-[carre(100)]: /images/carre.png "carre de cote 100 px"
+![](/images/carre.png "carre de cote 100 px")
 ## Fonction triangle
 ### Description
 Cette methode va nous permettre de dessiner un **triangle** avec `turtle` en utilisant le théorème d’**Al Kashi**. Elle prend trois parametres obligatoires, `coteA`, `coteB`, `coteC` qui represente la mesure des trois cotes en pixel et deux optionnels, la `couleur` et le remplissage ici `couleur1`.
@@ -66,7 +66,7 @@ def triangle(coteA, coteB, coteC, couleur = "black", couleur1 = "white"):
 ```python
 triangle(100, 90, 70)
 ```
-[triangle(100, 90, 70)]: /images/triangle.png "carre de cote 100 px"
+![](/images/triangle.png "triangle de cote 100, 90, 75px")
 ## Fonction rectangle
 ### Description
 Cette methode va nous permettre de dessiner un **rectangle** avec `turtle` en utilisant une boucle `for`. Elle prend deux parametres obligatoires, `longueur`, `largeur` en pixel et deux optionnels, la `couleur` du contour et le remplissage ici `couleur2`.
@@ -87,7 +87,7 @@ def rectangle(longueur, largeur, couleur = "black", couleur2='black'):
 ```python
 rectangle(100, 50)
 ```
-[rectangle(100, 50)]: /images/rectangle.png "retangle de longueur 100 et de largeur 50px"
+![](/images/rectangle.png "rectangle de longueur 100 et de largeur 50px")
 ## Fonction polygone
 ### Description
 Cette methode va nous permettre de dessiner un **polygone** avec `turtle` en utilisant une boucle `for`. Elle prend deux parametres obligatoires, `nbrCote`, `cote1` et deux optionnels, `cote2` et `cote3`.
@@ -111,7 +111,7 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
 ```python
 polygone(5, 50)
 ```
-[polygone(5, 50)]: /images/polygone.png "polygone de cote 5 de 50 px"
+![](/images/polygone.png "polygone de cote 5 de 50 px")
 ## Fonction trapeze
 ### Description
 Cette methode va nous permettre de dessiner un **tapeze** avec `turtle` en utilisant des methodes telles que `forward` et `left`. Elle prend 4 parametres obligatoires, `base1`, `base2`, `coteD`, `coteG` et deux optionnels, `couleur` et `couleur2`.
@@ -131,7 +131,7 @@ def trapeze(base1, base2, coteD, coteG, couleur = "black", couleur2 = "black"):
 ```python
 trapeze(85, 210, 75, 75)
 ```
-[trapeze(85, 210, 75, 75)]: /images/trapeze.png "trapeze de petite base 85 et de grande base 210px"
+![](/images/trapeze.png "trapeze de petite base 85 et de grande base 210px")
 ## Fonction losange
 ### Description
 Cette methode va nous permettre de dessiner un **losange** avec `turtle` en utilisant des methodes telles que `forward` qui nous permet d'avancer et `right` qui nous permet de tourner a l'angle voulu dans une boucle `for`. Elle prend un parametre obligatoires, `cote` et deux optionnels, `couleur` et `couleur2` pour le contour et le remplissage.
@@ -148,7 +148,7 @@ def losange(cote, couleur = "black", couleur2 = "black"):
 ```python
 losange(100)
 ```
-[losange(100)]: /images/losange.png "losange de cote 100px"
+![](/images/losange.png "losange de cote 100px")
 ## Fonction elypse
 ### Description
 Cette methode va nous permettre de dessiner un **elypse** avec `turtle` en utilisant des methodes telles que `forward` qui nous permet d'avancer, `left` qui nous permet de tourner a gauche selon l'angle voulu, `circle` et une boucle `for`. Elle prend un parametre obligatoires, `rayon` et un optionnel, `couleur`.
@@ -165,4 +165,4 @@ def elypse(rayon, couleur = "black"):
 ```python
 elypse(100)
 ```
-[elypse(100)]: /images/elypse.png "elypse de rayon 100px"
+![](/images/elypse.png "elypse de rayon 100px")
