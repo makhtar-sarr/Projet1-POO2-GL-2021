@@ -10,14 +10,14 @@ from math import*
 
 figure = Turtle()
 
-# Objectifs:
-# Methode:
-# Besoins:
-# Connus:
-# Entrees:
-# Sorties:
-# Resultats:
-# Hypotheses:
+# Objectifs: Dessiner un cercle avec la bibliotheque Turtle.
+# Methode: Usage de la methode circle.
+# Besoins: rayon et la couleur (optionnelle)
+# Connus: -
+# Entrees: rayon, couleur (optionnelle)
+# Sorties: -
+# Resultats: Dessin d'un cercle
+# Hypotheses: rayon > 0
 def cercle(rayon, couleur = "black"):
     figure.color(couleur)
     figure.circle(rayon)
@@ -31,8 +31,10 @@ def cercle(rayon, couleur = "black"):
 # Resultats:
 # Hypotheses:
 def demiCercle(rayon, couleur = "black"):
+    figure.left(90)
     figure.color(couleur)
     figure.circle(rayon, 180)
+
 # Objectifs:
 # Methode:
 # Besoins:
@@ -41,8 +43,8 @@ def demiCercle(rayon, couleur = "black"):
 # Sorties:
 # Resultats:
 # Hypotheses:
-def carre(cote, couleur = "black", ramplis = "white"):
-    figure.color(couleur, ramplis)
+def carre(cote, couleur = "black", remplis = "white"):
+    figure.color(couleur, remplis)
     for i in range(4):
         figure.forward(cote)
         figure.left(90)
@@ -116,7 +118,6 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
 # Sorties:
 # Resultats:
 # Hypotheses:
-
 def trapeze(base1, base2, coteD, coteG, couleur = "black", couleur2 = "black"):
     figure.color(couleur, couleur2)
     figure.forward(base1)
@@ -163,4 +164,6 @@ def demiElypse(rayon, couleur = "black"):
     figure.circle(rayon, 90)
     figure.circle(rayon//35, 90)
 
-# trapeze(30, 50, 20, 20)
+elypse(100)
+
+exitonclick()
