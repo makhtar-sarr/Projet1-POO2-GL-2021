@@ -14,17 +14,62 @@ Cette bibliotheque importe la bibliotheque `turtle`. Elle contient une variable 
 ### Diagramme des flux
 ![DF](https://user-images.githubusercontent.com/78378063/128629994-6ee4acb3-a236-4cc6-ac17-3a78bba47e62.png)
 ### Tableau des flux
-| Programme Principal | Fournit(Entrées) | Reçoit(Sorties) |
-| ------------ | ------------- | ------------- |
-| cercle | rayon | Rien |
-| demi-cercle | rayon | Rien |
-| carre | cote | Rien |
-| triangle | coteA, coteB, coteC | Rien |
-| rectangle | longueur, largeur | Rien |
-| polygone | nbrCote, cote1 | Rien |
-| trapeze | base1, base2, coteD, coteG | Rien |
-| losange | cote | Rien |
-| elypse | rayon | Rien |
+<table>
+    <th>
+        <tr>
+            <td>Programme Principal</td>
+            <td>Fournit(Entrées)</td>
+            <td>Reçoit(Sorties)</td>
+        </tr>
+    </th>
+    <tbody>
+        <tr>
+            <td>cercle</td>
+            <td>rayon</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>demi-cercle</td>
+            <td>rayon</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>Carre</td>
+            <td>cote</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>triangle</td>
+            <td>coteA, coteB, coteC</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>rectangle</td>
+            <td>longueur, largeur</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>polygone</td>
+            <td>nbrCote, cote1</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>trapeze</td>
+            <td>base1, base2, coteD, coteG</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>losange</td>
+            <td>cote</td>
+            <td>Rien</td>
+        </tr>
+        <tr>
+            <td>elypse</td>
+            <td>rayon</td>
+            <td>Rien</td>
+        </tr>
+    </tbody>
+</table>
 ### Fonction cercle
 #### Description
 Cette methode dessine un **cercle** en utilisant la methode `circle` de la bibliotheque `turtle`. Elle prend en parametre le `rayon` du cercle a tracer en pixel, la `couleur` qui est optionnelle.
