@@ -14,17 +14,17 @@ Cette bibliotheque importe la bibliotheque `turtle`. Elle contient une variable 
 ### Diagramme des flux
 ![DF](https://user-images.githubusercontent.com/78378063/128629994-6ee4acb3-a236-4cc6-ac17-3a78bba47e62.png)
 ### Tableau des flux
-Programme Principal | Fournit(Entrées) | Reçoit(Sorties)
------------- | ------------- | -------------
-cercle | rayon | Rien
-demi-cercle | rayon | Rien
-carre | cote | Rien
-triangle | coteA, coteB, coteC | Rien
-rectangle | longueur, largeur | Rien
-polygone | nbrCote, cote1 | Rien
-trapeze | base1, base2, coteD, coteG | Rien
-losange | cote | Rien
-elypse | rayon | Rien
+| Programme Principal | Fournit(Entrées) | Reçoit(Sorties) |
+| ------------ | ------------- | ------------- |
+| cercle | rayon | Rien |
+| demi-cercle | rayon | Rien |
+| carre | cote | Rien |
+| triangle | coteA, coteB, coteC | Rien |
+| rectangle | longueur, largeur | Rien |
+| polygone | nbrCote, cote1 | Rien |
+| trapeze | base1, base2, coteD, coteG | Rien |
+| losange | cote | Rien |
+| elypse | rayon | Rien |
 ### Fonction cercle
 #### Description
 Cette methode dessine un **cercle** en utilisant la methode `circle` de la bibliotheque `turtle`. Elle prend en parametre le `rayon` du cercle a tracer en pixel, la `couleur` qui est optionnelle.
