@@ -31,7 +31,6 @@ def cercle(rayon, couleur = "black"):
 # Resultats: dessin d'un demi-cercle.
 # Hypotheses: rayon > 0.
 def demiCercle(rayon, couleur = "black"):
-    figure.left(90)
     figure.color(couleur)
     figure.circle(rayon, 180)
 
