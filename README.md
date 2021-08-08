@@ -191,7 +191,13 @@ def elypse(rayon, couleur = "black"):
 ```python
 elypse(100)
 ```
-![elypse](https://user-images.githubusercontent.com/78378063/128609183-7ca71ea9-40c5-43d1-98e2-7de467aa6020.png)
+![elypse](https://user-images.githubusercontent.com/78378063/128609183-7ca71ea9-40c5-43d1-98e2-7de467aa6020.png)  
+Cliquer ici pour voir le code complet de [`genieCivilOuvrage2D.py`](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/genieCivilOuvrage2D.py)
 ## Pont
-Dans ce fichier on a dessine un pont grace aux bibliotheques `genieCivilOuvrage2D` et `turtle`
-[Default](#)
+Dans ce fichier on a dessine un pont grace aux bibliotheques `genieCivilOuvrage2D` et `turtle`. Ci-dessous se trouve le resulte du pont.  
+![pont](https://user-images.githubusercontent.com/78378063/128631352-3c1483da-934e-4fe6-b9e2-83b37ff05238.png)  
+Cliquer ici pour voir le code complet de [`pont.py`](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/pont.py)
+## Facade
+Dans ce fichier on a dessine la facade d'un maison grace aux bibliotheques `genieCivilOuvrage2D` et `turtle`. Ci-dessous se trouve le resulte de la facade.  
+![facade](https://user-images.githubusercontent.com/78378063/128631800-d023062b-842d-4042-850d-6a1d0f7a6031.png)  
+Cliquer ici pour voir le code complet de [`facade.py`](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/facade.py)
