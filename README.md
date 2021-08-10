@@ -83,7 +83,7 @@ def cercle(rayon, couleur = "black"):
 ```python
 cercle(100)
 ```
-![cercle](https://user-images.githubusercontent.com/78378063/128608950-c93aa567-d8b5-43b0-a6d5-7b0e6c30e102.png)
+![cercle](images/cercle.png)
 ### Fonction demi-cercle
 #### Description
 Cette methode va nous permettre de dessiner un **demi-cercle** avec toujours la methode `circle` de `turtle`, mais dans ce cas nous allons renseigner l'angle d'arret. Elle prend un parametre obligatoire, le `rayon` et un optionnel, la `couleur`.
@@ -98,7 +98,7 @@ def demiCercle(rayon, couleur = "black"):
 ```python
 demiCercle(100)
 ```
-![demiCercle](https://user-images.githubusercontent.com/78378063/128609126-f4271e8e-7a48-421a-9a74-d24c21b3b967.png)
+![demiCercle](images/demi-cercle.png)
 ### Fonction carre
 #### Description
 Cette methode va nous permettre de dessiner un carre avec `turtle` en utilisant une boucle `for`. Elle prend un parametre obligatoire, `cote` du carre en pixel et deux optionnels, la `couleur` et le remplissage ici `remplis`.
@@ -114,7 +114,7 @@ def carre(cote, couleur = "black", remplis = "white"):
 ```python
 carre(100)
 ```
-![carre](https://user-images.githubusercontent.com/78378063/128609147-3b75ede6-6ae7-4c26-880b-3976c24c2aad.png)
+![carre](images/carre.png)
 ### Fonction triangle
 #### Description
 Cette methode va nous permettre de dessiner un **triangle** avec `turtle` en utilisant le théorème d’**Al Kashi!
@@ -137,7 +137,7 @@ def triangle(coteA, coteB, coteC, couleur = "black", couleur1 = "white"):
 ```python
 triangle(100, 90, 70)
 ```
-![triangle](https://user-images.githubusercontent.com/78378063/128609388-a68bb3ff-51d4-4b25-9127-c0a47234f986.png)
+![triangle](images/triangle.png)
 ### Fonction rectangle
 #### Description
 Cette methode va nous permettre de dessiner un **rectangle** avec `turtle` en utilisant une boucle `for`. Elle prend deux parametres obligatoires, `longueur`, `largeur` en pixel et deux optionnels, la `couleur` du contour et le remplissage ici `couleur2`.
@@ -158,7 +158,7 @@ def rectangle(longueur, largeur, couleur = "black", couleur2='black'):
 ```python
 rectangle(100, 50)
 ```
-![rectangle](https://user-images.githubusercontent.com/78378063/128609309-ba7abaee-b9e0-410f-9e18-524124bf2dfb.png)
+![rectangle](images/rectangle.png)
 ### Fonction polygone
 #### Description
 Cette methode va nous permettre de dessiner un **polygone** avec `turtle` en utilisant une boucle `for`. Elle prend deux parametres obligatoires, `nbrCote`, `cote1` et deux optionnels, `cote2` et `cote3`.
@@ -182,7 +182,7 @@ def polygone(nbrCote, cote1, cote2 = 0, cote3 = 0):
 ```python
 polygone(5, 50)
 ```
-![polygone](https://user-images.githubusercontent.com/78378063/128609244-66415cb6-8629-44e4-b713-25ed24b0ba57.png)
+![polygone](images/polygone.png)
 ### Fonction trapeze
 #### Description
 Cette methode va nous permettre de dessiner un **tapeze** avec `turtle` en utilisant des methodes telles que `forward` et `left`. Elle prend 4 parametres obligatoires, `base1`, `base2`, `coteD`, `coteG` et deux optionnels, `couleur` et `couleur2`.
@@ -202,7 +202,7 @@ def trapeze(base1, base2, coteD, coteG, couleur = "black", couleur2 = "black"):
 ```python
 trapeze(85, 210, 75, 75)
 ```
-![trapeze](https://user-images.githubusercontent.com/78378063/128609348-c3cc5930-4aed-4a78-aee8-814355158002.png)
+![trapeze](images/trapeze.png)
 ### Fonction losange
 #### Description
 Cette methode va nous permettre de dessiner un **losange** avec `turtle` en utilisant des methodes telles que `forward` qui nous permet d'avancer et `right` qui nous permet de tourner a l'angle voulu dans une boucle `for`. Elle prend un parametre obligatoires, `cote` et deux optionnels, `couleur` et `couleur2` pour le contour et le remplissage.
@@ -219,7 +219,7 @@ def losange(cote, couleur = "black", couleur2 = "black"):
 ```python
 losange(100)
 ```
-![losange](https://user-images.githubusercontent.com/78378063/128609215-59e351f6-4e0a-48b5-a906-97a272c145a0.png)
+![losange](images/losange.png)
 ### Fonction elypse
 #### Description
 Cette methode va nous permettre de dessiner un **elypse** avec `turtle` en utilisant des methodes telles que `forward` qui nous permet d'avancer, `left` qui nous permet de tourner a gauche selon l'angle voulu, `circle` et une boucle `for`. Elle prend un parametre obligatoires, `rayon` et un optionnel, `couleur`.
@@ -236,15 +236,15 @@ def elypse(rayon, couleur = "black"):
 ```python
 elypse(100)
 ```
-![elypse](https://user-images.githubusercontent.com/78378063/128609183-7ca71ea9-40c5-43d1-98e2-7de467aa6020.png)  
+![elypse](images/elypse.png)  
 Cliquer ici pour voir le code complet de [`genieCivilOuvrage2D.py`](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/genieCivilOuvrage2D.py)
 ## Pont
 Dans ce fichier on a dessine un pont grace aux bibliotheques `genieCivilOuvrage2D` et `turtle`. Ci-dessous se trouve le resulte du pont.  
-![pont](https://user-images.githubusercontent.com/78378063/128631352-3c1483da-934e-4fe6-b9e2-83b37ff05238.png)  
+![pont](images/pont.png)  
 Cliquer ici pour voir le code complet de [`pont.py`](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/pont.py)
 ## Facade
 Dans ce fichier on a dessine la facade d'un maison grace aux bibliotheques `genieCivilOuvrage2D` et `turtle`. Ci-dessous se trouve le resulte de la facade.  
-![facade](https://user-images.githubusercontent.com/78378063/128631800-d023062b-842d-4042-850d-6a1d0f7a6031.png)  
+![facade](images/facade.png)  
 Cliquer ici pour voir le code complet de [`facade.py`](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/facade.py)
 ## Documentation
 Cliquer ici pour voir la [documentation](https://github.com/makhtar-sarr/Projet1-POO2-GL-2021/blob/main/Projet1%20POO2%20LI3%20GL.pdf)
